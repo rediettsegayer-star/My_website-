@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Submitted</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            width: 350px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c7d30;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            margin: 10px 0;
+            color: #444;
+            font-size: 14px;
+        }
+
+        .feedback-box {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-align: left;
+            font-size: 14px;
+            border-left: 4px solid #2c7d30;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #2c7d30;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #256a28;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Feedback Submitted ✔</h2>
+        <p class="message">Thank you for your feedback! Your response has been recorded.</p>
+
+        <div class="feedback-box" id="feedbackDisplay">
+            <!-- Submitted feedback will appear here -->
+        </div>
+
+        <button onclick="goHome()">Go Back</button>
+    </div>
+
+    <script>
+const feedback = JSON.parse(localStorage.getItem("submittedFeedback"));
+const box = document.getElementById("feedbackDisplay");
+
+if (feedback) {
+    box.innerHTML = `
+        <strong>Department:</strong> ${feedback.department}<br>
+        <strong>Program:</strong> ${feedback.program}<br>
+        <strong>Year:</strong> ${feedback.year}<br>
+        <strong>Section:</strong> ${feedback.section}<br>
+        <strong>Instructor:</strong> ${feedback.instructor}<br>
+        <strong>Course:</strong> ${feedback.course}<br>
+        <strong>Course Code:</strong> ${feedback.coursecode || "N/A"}<br>
+        <strong>Rating:</strong> ${feedback.rating}/5<br>
+        <strong>Comment:</strong> ${feedback.comment}
+    `;
+
+    // Optional: clear after showing
+    localStorage.removeItem("submittedFeedback");
+} else {
+    box.innerHTML = "No feedback found.";
+}
+
+function goHome() {
+    window.location.href = "main.html"; 
+}
+</script>
+
+
+</body>
+</html>
