@@ -1,0 +1,109 @@
+body {
+        background: linear-gradient( #e7f0fd 60%, #d2e2fa 100%);
+        margin: 0;
+        }
+
+button {
+    font-size: 22px;
+    width: 15%;
+    transition: 0.2s;
+}
+
+button:hover{
+        font-size: 25px;
+        background-color: rgba(115, 113, 125, 0.626);
+        border-color: rgba(255, 255, 255, 0);
+        border-radius: 8px;
+        transition: 0.3s;
+        
+        
+    }
+.loginButton{
+    margin-top: 50px;
+}
+.user {
+    font-size: 15px;
+    border-radius: 8px;
+    /* background-color: rgb(255, 236, 212); */
+    border-color:black;
+    border-width: 1.5px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 280px;
+}
+
+a {
+    color: rgb(128, 3, 3);
+    text-decoration: none
+}
+
+p {
+    margin: 6px 0 0 0;
+    font-size: 13px
+}
+
+aside {
+    transition: 0.5s;
+    position: fixed;
+    top: 130px;
+    height: 300px;
+    width: 200px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 16px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #acc2e680;
+    color: #222;
+}
+aside:hover{
+        height: 330px;
+        width: 350px;
+        background-color: white;
+        font-size: 20px;
+        transform: scale(1.1);
+    }
+
+.right_aisde {
+    right: 80px;
+}
+
+.left_aside {
+    left: 80px;
+}
+
+h1 {
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 0 0 8px 0;
+    color: green
+}
+
+li {
+    margin: 6px 0;
+    color: rgb(128, 3, 3);
+    transition: 0.3s;
+}
+li:hover{
+        font-size: 28px;
+        transition: 0.5s;
+      }
+
+ul {
+    list-style: circle;
+    margin: 0 0 12px 0;
+}
+
+div {
+    font-size: 14px;
+}
+
+strong {
+    color: green
+}
+center {
+            margin-top: 40px;
+        }
