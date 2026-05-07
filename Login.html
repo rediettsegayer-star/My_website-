@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hope University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>HEUC</h1>
+    <h2>login page</h2><br><br>
+    <input type="text" placeholder="User Name" class="user"  autocomplete="off" required><br>
+    <input type="password" placeholder="Password" class="user"  autocomplete="off" required><br>
+
+    <button class="loginButton"><a href="main.html">Login</a></button><br><br>
+    <br><br><br><br><br><br>
+    <button><a href="https://www.facebook.com/share/1BBFDyLT63/"><b>Facebook</b></a></button>
+    <button><a href="https://www.linkedin.com/company/heuc-edu-et/" ><b>LinkedIn</b></a></button>
+    <button><a href="https://t.me/HEUC_EDU"><b>Telegram</b></a></button>
+    </center>
+<aside role="complementary" aria-label="Sidebar" class="right_aisde">
+        <h3>Quick Links</h3>
+          <ul>
+            <li><a href="NewRegister.html" >Register</a></li>
+            <li><a href="profile.html" >My Profile</a></li>
+            <li><a href="https://www.heuc.edu.et/" >Courses</a></li>
+            <li><a href="https://www.heuc.edu.et/latest-" >Academic Updates</a></li>
+          </ul>
+        <div>
+          <strong>Contact</strong>
+          <p>info: +251974 176600<br>Registrar: +251974 176666<br>Finance: +251974 176617<br>P.O.Box : 12382<br>info@heuc.edu.et<br>Jemo 1 infront of Lebu Medehanialem Church<br>Addis Ababa</p>
+        </div>
+      </aside>
+      <aside role="complementary" aria-label="Sidebar" class="left_aside">
+        <h3>Programs</h3>
+          <ul>
+            <li>Computer Science</li>
+            <li>Architecture</li>
+            <li>Marketing Management</li>
+            <li>Management</li>
+            <li>Accounting & Finanace</li>
+          </ul>
+      </aside>
+</body>
+<script>
+
+const validUser = "student";
+  const validPass = "12345";
+
+  document.querySelector(".loginButton").addEventListener("click", function(e) {
+    e.preventDefault(); 
+
+    const username = document.querySelectorAll(".user")[0].value.trim();
+    const password = document.querySelectorAll(".user")[1].value.trim();
+
+    if (username === validUser && password === validPass) {
+      window.location.href = "main.html";
+    } else {
+      alert("Invalid username or password. Please try again.");
+    }
+  });
+</script>
+
+</html>
