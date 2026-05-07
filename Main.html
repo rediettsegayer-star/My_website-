@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <main>
+    <center>
+      <br><br><br><br>
+      <img src="download.png" alt="HEUC Logo"/>
+      <h1 class="h11">Welcome to HEUC</h1>
+      <h1 class="h12">Instructor Evaluation System<br>To Be Completed By Students</h1>
+    </center>
+
+    <aside class="form">
+      <h4>Evaluation Form</h4>
+      <p>Please fill out the form below to provide your valuable feedback. Your input helps improve education quality at Hope Enterprise University College (HEUC).</p>
+
+      <form id="evalForm">
+        <div class="form-grid">
+          <div>
+            <label for="department"><span style="color:red">*</span> Department</label>
+            <select id="department" class="input" required autocomplete="off">
+              <option>Select Department</option>
+              <option>Computer Science</option>
+              <option>Architecture</option>
+              <option>Marketing Management</option>
+              <option>Management</option>
+              <option>Accounting & Finance</option>
+            </select>
+          </div>
+
+          <div>
+            <label><span style="color:red">*</span> Program</label>
+            <div class="radios">
+              <label><input type="radio" name="program" value="regular" required autocomplete="off"> Regular</label>
+              <label><input type="radio" name="program" value="extension"> Extension</label>
+            </div>
+          </div>
+
+          <div><label for="year"><span style="color:red">*</span> Year</label><input id="year" type="number" class="input" min="1" max="4" required autocomplete="off"></div>
+          <div><label for="section"><span style="color:red">*</span> Section</label><input id="section" type="number" class="input" min="1" max="5" required autocomplete="off"></div>
+          <div><label for="instructor"><span style="color:red">*</span> Instructor Name</label><input id="instructor" type="text" maxlength="50" class="input" required autocomplete="off"></div>
+          <div><label for="course"><span style="color:red">*</span> Course Name</label><input id="course" type="text" maxlength="50" class="input" required autocomplete="off"></div>
+          <div><label for="coursecode">Course Code (optional)</label><input id="coursecode" type="text" class="input" autocomplete="off"></div>
+
+          <div class="full">
+            <fieldset class="ratings">
+              <legend><span style="color:red">*</span> Rate the following (1 = Poor, 5 = Excellent)</legend>
+
+              <div class="rating-row">
+                <span id="q1-label">1. The course instructor gives course outlines at the beginning of the semester.</span>
+                    <div class="radios">
+                    <label><input type="radio" name="q1" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q1" value="4">4</label>
+                    <label><input type="radio" name="q1" value="3">3</label>
+                    <label><input type="radio" name="q1" value="2">2</label>
+                    <label><input type="radio" name="q1" value="1">1</label>
+                    </div>
+                  </div>
+                  
+                  <div class="rating-row">
+                    <span id="q2-label">2. The course instructor teaches effectively by preparation using useful instructional and available technology.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q2-label">
+                    <label><input type="radio" name="q2" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q2" value="4">4</label>
+                    <label><input type="radio" name="q2" value="3">3</label>
+                    <label><input type="radio" name="q2" value="2">2</label>
+                    <label><input type="radio" name="q2" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q3-label">3. The course instructor is knowledgeable enough on his course.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q3-label">
+                    <label><input type="radio" name="q3" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q3" value="4">4</label>
+                    <label><input type="radio" name="q3" value="3">3</label>
+                    <label><input type="radio" name="q3" value="2">2</label>
+                    <label><input type="radio" name="q3" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q4-label">4. The course instructor arrives on time.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q4-label">
+                    <label><input type="radio" name="q4" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q4" value="4">4</label>
+                    <label><input type="radio" name="q4" value="3">3</label>
+                    <label><input type="radio" name="q4" value="2">2</label>
+                    <label><input type="radio" name="q4" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q5-label">5. The course instructor leaves on time.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q5-label">
+                    <label><input type="radio" name="q5" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q5" value="4">4</label>
+                    <label><input type="radio" name="q5" value="3">3</label>
+                    <label><input type="radio" name="q5" value="2">2</label>
+                    <label><input type="radio" name="q5" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q6-label">6. The course instructor manages and maintains appropriate discipline in the class.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q6-label">
+                    <label><input type="radio" name="q6" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q6" value="4">4</label>
+                    <label><input type="radio" name="q6" value="3">3</label>
+                    <label><input type="radio" name="q6" value="2">2</label>
+                    <label><input type="radio" name="q6" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q7-label">7. The course instructor covered all chapters in the course outline.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q7-label">
+                    <label><input type="radio" name="q7" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q7" value="4">4</label>
+                    <label><input type="radio" name="q7" value="3">3</label>
+                    <label><input type="radio" name="q7" value="2">2</label>
+                    <label><input type="radio" name="q7" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q8-label">8. The course instructor gives immediate feedback on students' progress and performances</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q8-label">
+                    <label><input type="radio" name="q8" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q8" value="4">4</label>
+                    <label><input type="radio" name="q8" value="3">3</label>
+                    <label><input type="radio" name="q8" value="2">2</label>
+                    <label><input type="radio" name="q8" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q9-label">9. The course instructor encourages students' interaction/participation</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q9-label">
+                    <label><input type="radio" name="q9" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q9" value="4">4</label>
+                    <label><input type="radio" name="q9" value="3">3</label>
+                    <label><input type="radio" name="q9" value="2">2</label>
+                    <label><input type="radio" name="q9" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q10-label">10. Assessment covers fairly all contents and learning experiences.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q10-label">
+                    <label><input type="radio" name="q10" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q10" value="4">4</label>
+                    <label><input type="radio" name="q10" value="3">3</label>
+                    <label><input type="radio" name="q10" value="2">2</label>
+                    <label><input type="radio" name="q10" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q11-label">11. The course instructor uses his/her office/consultation hours to render academic support and advice for the students.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q11-label">
+                    <label><input type="radio" name="q11" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q11" value="4">4</label>
+                    <label><input type="radio" name="q11" value="3">3</label>
+                    <label><input type="radio" name="q11" value="2">2</label>
+                    <label><input type="radio" name="q11" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row">
+                    <span id="q12-label">12. The course instructor returns the graded script with reasinable time.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q12-label">
+                    <label><input type="radio" name="q12" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q12" value="4">4</label>
+                    <label><input type="radio" name="q12" value="3">3</label>
+                    <label><input type="radio" name="q12" value="2">2</label>
+                    <label><input type="radio" name="q12" value="1">1</label>
+                    </div>
+                  </div>
+
+                  <div class="rating-row"></div>
+                    <span id="q13-label">13. The course instructor serves as a role model through high moral standards in class and on campus, as well as encouraging high professional standards.</span>
+                    <div class="radios" role="radiogroup" aria-labelledby="q13-label">
+                    <label><input type="radio" name="q13" value="5" required autocomplete="off">5</label>
+                    <label><input type="radio" name="q13" value="4">4</label>
+                    <label><input type="radio" name="q13" value="3">3</label>
+                    <label><input type="radio" name="q13" value="2">2</label>
+                    <label><input type="radio" name="q13" value="1">1</label>
+                    </div>
+
+              </div>
+            </fieldset>
+          </div>
+           <br><br>
+          <div class="full">
+            <label for="feedback"><span style="color:red">*</span> Enter your feedback here</label>
+            <div class="feedback-row">
+              <textarea id="feedback" class="feedback" maxlength="800" required placeholder="Write your feedback (max 800 characters)">
+                
+              </textarea>
+              <div id="fb-count" class="charcount" aria-live="polite">0 / 800</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="sbutton">Submit</button>
+          <input type="reset" class="rbutton" value="Reset">
+        </div>
+      </form>
+    </aside>
+
+    <nav class="nav">
+    <aside class="top">
+      <button id="b1"><a href="#about"><h3 class="logout">About</h3></a></button>
+      <button id="b2"><a href="login.html"><h3 class="logout">Logout</h3></a></button>
+    </aside>
+    </nav>
+  </main>
+
+  <section class="section">
+    <h1>About</h1>
+    <h2 id="about">
+      Hope Enterprise University College (HEUC) is a prestigious institution dedicated to providing quality education and fostering academic excellence. Established with the vision of empowering students to become leaders in their respective fields, HEUC offers a diverse range of programs and courses designed to meet the evolving needs of the global community. With a commitment to innovation, research, and community engagement, HEUC strives to create a dynamic learning environment that nurtures creativity, critical thinking, and lifelong learning.<br><br>
+      At Hope Enterprise University College, we are committed to providing students with a seamless and efficient academic experience. This portal is designed to make your course registration, profile management, and access to important academic updates simple and secure.<br><br>
+      Begin your journey with confidence—your future at HEUC starts here.
+    </h2>
+  </section>
+
+  <footer>
+    <h3>Contact us</h3>
+    <p class="p">info: +251974 176600<br>Registrar: +251974 176666<br>Finance: +251974 176617<br>P.O.Box : 12382<br>info@heuc.edu.et<br>Jemo 1 infront of Lebu Medehanialem Church<br>Addis Ababa</p>
+    <a href="https://www.facebook.com/share/1BBFDyLT63/" class="contact">@Facebook</a>
+    <a href="https://www.linkedin.com/company/heuc-edu-et/" class="contact">@LinkedIn</a>
+    <a href="https://t.me/HEUC_EDU" class="contact">@Telegram</a>
+  </footer>
+
+  <script>
+    document.getElementById("evalForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const ratings = Array.from({length: 13}, (_, i) => {
+        const r = document.querySelector(`input[name="q${i+1}"]:checked`);
+        return r ? Number(r.value) : 0;
+      });
+
+      const valid = ratings.filter(v => v > 0);
+      const avg = valid.length ? valid.reduce((a,b)=>a+b,0)/valid.length : 0;
+      const avgRounded = Math.round(avg*100)/100;
+
+      const feedbackData = {
+        department: document.getElementById("department").value,
+        program: (document.querySelector('input[name="program"]:checked')||{}).value || '',
+        year: document.getElementById("year").value,
+        section: document.getElementById("section").value,
+        instructor: document.getElementById("instructor").value,
+        course: document.getElementById("course").value,
+        coursecode: document.getElementById("coursecode").value,
+        averageRating: avgRounded,
+        comment: document.getElementById("feedback").value
+      };
+
+      localStorage.setItem("submittedFeedback", JSON.stringify(feedbackData));
+      window.location.href = "confirmation.html";
+    });
+
+    (function(){
+      const ta = document.getElementById('feedback');
+      const counter = document.getElementById('fb-count');
+      if(ta && counter){
+        const max = parseInt(ta.getAttribute('maxlength'),10);
+        ta.addEventListener('input', () => {
+          const len = ta.value.length;
+          counter.textContent = `${len} / ${max}`;
+          counter.classList.toggle('warn', max - len <= 50);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
